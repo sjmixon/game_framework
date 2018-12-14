@@ -3,10 +3,11 @@
 #define GAME_DATA_H
 
 #include <map>
+#include <sstream>
 #include <string>
 
 #include "Vector.h"
-#include "XML_Parser.h"
+#include "Parser.h"
 
 class Game_Data
 {
@@ -20,10 +21,10 @@ class Game_Data
         int get_xml_int(const std::string&) const;
 
     private :
-        XML_Parser parser;
-        const map<std::string, std::string> game_data;
+        Parser parser;
+        const std::map<std::string, std::string> game_data;
 
-        Game_Data(const std::string&);
+        Game_Data(const std::string& fn = "xml/game.xml");
         Game_Data(const Game_Data&);
         Game_Data& operator=(const Game_Data&);
 };

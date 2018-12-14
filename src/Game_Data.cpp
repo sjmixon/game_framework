@@ -12,8 +12,8 @@ Game_Data::~Game_Data()
 }
 
 Game_Data::Game_Data(const std::string& fn) :
-    parser(fn),/* FIX ME */
-    game_data(/*parser.get_xml_data() FIX ME */)
+    parser(fn),
+    game_data(parser.get_xml_data()) 
 {
 }
 
@@ -79,7 +79,7 @@ float Game_Data::get_xml_float(const std::string& tag) const
 
 const std::string& Game_Data::get_xml_string(const std::string& tag) const
 {
-    std::map(std::string, std::string>::const_iterator ptr =
+    std::map<std::string, std::string>::const_iterator ptr =
             game_data.find(tag);
     if (ptr == game_data.end())
     {
