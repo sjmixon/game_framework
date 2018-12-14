@@ -1,4 +1,8 @@
 
+#include <SDL.h>
+#include <string>
+
+#include "Game_Data.h"
 #include "Clock.h"
 
 Clock& Clock::get_instance()
@@ -8,8 +12,8 @@ Clock& Clock::get_instance()
 }
 
 Clock::Clock() :
-    FRAME_CAP_ON(false /* FIX ME */),
-    PERIOD(0 /* FIX ME */),
+    FRAME_CAP_ON(Game_Data::get_instance().get_xml_bool("clock/frame_cap_on")),
+    PERIOD(Game_Data::get_instance().get_xml_int("clock/period")),
     started(false),
     paused(false),
     frames(0),

@@ -10,9 +10,12 @@ OBJS = \
 	obj/Clock.o \
 	obj/Drawable.o \
 	obj/Game_Data.o \
+	obj/Image.o \
 	obj/Main.o \
 	obj/Parser.o \
-	obj/Vector.o
+	obj/Render_Context.o \
+	obj/Vector.o \
+	obj/Viewport.o
 
 default : $(OBJS)
 	$(CC) $(CPPFLAGS) -o run $(OBJS) $(LDFLAGS)

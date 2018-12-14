@@ -3,10 +3,8 @@
 #define GAME_DATA_H
 
 #include <map>
-#include <sstream>
 #include <string>
 
-#include "Vector.h"
 #include "Parser.h"
 
 class Game_Data

@@ -2,9 +2,9 @@
 #ifndef DRAWABLE_H
 #define DRAWABLE_H
 
-#include <SDL.h>
 #include <string>
 
+#include "Image.h"
 #include "Vector.h"
 
 class Drawable
@@ -22,7 +22,7 @@ class Drawable
         virtual int get_scaled_height() const = 0;
         const std::string& get_name() const;
         void set_name(const std::string&);
-        /* FIX ME *///virtual const Image* get_image() const = 0;
+        virtual const Image* get_image() const = 0;
         virtual const SDL_Surface* get_surface() const = 0;
         float get_x() const;
         void set_x(float);

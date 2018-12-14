@@ -1,4 +1,6 @@
 
+#include <SDL.h>
+
 #include "Drawable.h"
 
 Drawable::Drawable(const std::string& n, const Vector& pos, const Vector& vel,

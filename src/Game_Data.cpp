@@ -1,5 +1,8 @@
 
+#include <sstream>
+
 #include "Game_Data.h"
+#include "Vector.h"
 
 Game_Data& Game_Data::get_instance()
 {

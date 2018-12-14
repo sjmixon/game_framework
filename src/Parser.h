@@ -2,10 +2,8 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include <cstring>
 #include <deque>
 #include <expat.h>
-#include <fstream>
 #include <map>
 #include <string>
 

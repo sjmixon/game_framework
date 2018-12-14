@@ -2,9 +2,6 @@
 #ifndef CLOCK_H
 #define CLOCK_H
 
-#include <SDL.h>
-#include <string>
-
 class Clock
 {
     public :

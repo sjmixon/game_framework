@@ -1,4 +1,7 @@
 
+#include <cstring>
+#include <fstream>
+
 #include "Parser.h"
 
 Parser::Parser(const std::string& fn) :
