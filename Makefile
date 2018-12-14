@@ -11,6 +11,7 @@ OBJS = \
 	obj/Drawable.o \
 	obj/Game_Data.o \
 	obj/Main.o \
+	obj/Parser.o \
 	obj/Vector.o
 
 default : $(OBJS)
