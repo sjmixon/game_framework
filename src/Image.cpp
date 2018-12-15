@@ -58,3 +58,10 @@ void Image::draw(int x, int y, float scale) const
     SDL_RenderCopy(renderer, texture, &view, &dest);
 }
 
+void Image::draw(int sx, int sy, int dx, int dy) const
+{
+    SDL_Rect src = {sx, sy, view.w, view.h};
+    SDL_Rect dst = {dx, dy, surface->w, surface->h};
+    SDL_RenderCopy(renderer, texture, &src, &dst);
+}
+

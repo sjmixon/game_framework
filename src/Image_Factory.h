@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 
+#include "Game_Data.h"
 #include "Image.h"
 
 class Image_Factory
@@ -23,12 +24,12 @@ class Image_Factory
         std::map<std::string, SDL_Texture*> textures;
         std::map<std::string, Image*> images;
         std::map<std::string, std::vector<SDL_Surface*>> multisurfaces;
-        std::map<std::string, std::vector<SDL_Surface*>> multitextures;
+        std::map<std::string, std::vector<SDL_Texture*>> multitextures;
         std::map<std::string, std::vector<Image*>> multiimages;
 
         Image_Factory();
         Image_Factory(const Image_Factory&);
-        Image_Factory& operator(const Image_Factory&);
+        Image_Factory& operator=(const Image_Factory&);
 };
 
 #endif

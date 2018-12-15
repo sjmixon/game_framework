@@ -13,6 +13,7 @@ class Image
 
         void regenerate_texture();
         void draw(int, int, float) const;
+        void draw(int, int, int, int) const;
         int get_width() const;
         int get_height() const;
         SDL_Surface* get_surface() const;
