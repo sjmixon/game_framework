@@ -21,7 +21,7 @@ class Clock
 
     private :
         const bool FRAME_CAP_ON;
-        const Uint32 PERIOD;
+        const unsigned PERIOD;
 
         bool started;
         bool paused;

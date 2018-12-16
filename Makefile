@@ -9,12 +9,14 @@ LDFLAGS = `sdl2-config --libs` -lm -lexpat -lSDL2_ttf -lSDL2_image -lSDL2_mixer
 OBJS = \
 	obj/Clock.o \
 	obj/Drawable.o \
+	obj/Engine.o \
 	obj/Game_Data.o \
 	obj/Image.o \
 	obj/Image_Factory.o \
 	obj/Main.o \
 	obj/Parser.o \
 	obj/Render_Context.o \
+	obj/Sprite.o \
 	obj/Sprite_Sheet.o \
 	obj/Vector.o \
 	obj/Viewport.o \

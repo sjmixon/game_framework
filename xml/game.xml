@@ -1,0 +1,57 @@
+
+<?xml version = "1.0"?>
+
+<Game_Data>
+
+    <title>Game Framework</title>
+
+    <clock>
+        <frame_cap_on>true</frame_cap_on>
+        <period>17</period>
+    </clock>
+
+    <view>
+        <width>1100</width>
+        <height>850</height>
+    </view>
+
+    <world>
+        <width>6600</width>
+        <height>5100</height>
+    </world>
+
+    <back>
+        <file>assets/bigstarrysky.png</file>
+        <factor>1</factor>
+    </back>
+
+    <yellow>
+        <file>assets/yellowstar32.png</file>
+        <frames>1</frames>
+        <frame_interval>0</frame_interval>
+        <start>
+            <x>0</x>
+            <y>0</y>
+        </start>
+        <speed>
+            <x>100</x>
+            <y>100</y>
+        </speed>
+    </yellow>
+
+    <spin>
+        <file>assets/stars.png</file>
+        <frames>4</frames>
+        <frame_interval>50</frame_interval>
+        <start>
+            <x>350</x>
+            <y>400</y>
+        </start>
+        <speed>
+            <x>-100</x>
+            <y>100</y>
+        </speed>
+    </spin>
+
+</Game_Data>
+

@@ -20,6 +20,10 @@ Drawable::Drawable(const Drawable& d) :
 {
 }
 
+Drawable::~Drawable()
+{
+}
+
 float Drawable::get_scale() const
 {
     return (scale);
