@@ -20,7 +20,8 @@ OBJS = \
 	obj/Sprite_Sheet.o \
 	obj/Vector.o \
 	obj/Viewport.o \
-	obj/World.o
+	obj/World.o \
+	obj/Writer.o
 
 default : $(OBJS)
 	$(CC) $(CPPFLAGS) -o run $(OBJS) $(LDFLAGS)

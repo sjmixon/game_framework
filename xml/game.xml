@@ -1,9 +1,17 @@
 
 <?xml version = "1.0"?>
 
-<Game_Data>
+<game_data>
 
     <title>Game Framework</title>
+
+    <fonts>
+        <count>1</count>
+        <font0>
+            <file>fonts/arial.ttf</file>
+            <size>12</size>
+        </font0>
+    </fonts>
 
     <clock>
         <frame_cap_on>true</frame_cap_on>
@@ -18,12 +26,12 @@
     <world>
         <width>6600</width>
         <height>5100</height>
+        <count>1</count>
+        <world0>
+            <file>assets/bigstarrysky.png</file>
+            <factor>1</factor>
+        </world0>
     </world>
-
-    <back>
-        <file>assets/bigstarrysky.png</file>
-        <factor>1</factor>
-    </back>
 
     <yellow>
         <file>assets/yellowstar32.png</file>
@@ -53,5 +61,5 @@
         </speed>
     </spin>
 
-</Game_Data>
+</game_data>
 
