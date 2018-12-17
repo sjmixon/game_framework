@@ -5,6 +5,7 @@
 #include "Game_Data.h"
 #include "Engine.h"
 #include "Render_Context.h"
+#include "Sound.h"
 #include "Writer.h"
 
 Engine::~Engine()
@@ -37,6 +38,7 @@ Engine::Engine() :
     }
     sprites.push_back(new Sprite(std::string("yellow"), 1.0));
     sprites.push_back(new Sprite(std::string("spin"), 1.0));
+    Sound::get_instance().play_track(0);
     Viewport::get_instance().set_object_to_track(sprites[0]);
 }
 

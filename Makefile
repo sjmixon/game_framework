@@ -16,6 +16,7 @@ OBJS = \
 	obj/Main.o \
 	obj/Parser.o \
 	obj/Render_Context.o \
+	obj/Sound.o \
 	obj/Sprite.o \
 	obj/Sprite_Sheet.o \
 	obj/Vector.o \

@@ -13,6 +13,18 @@
         </font0>
     </fonts>
 
+    <tracks>
+        <count>1</count>
+        <track0>
+            <file>audio/tracks/stones.mp3</file>
+            <volume>1</volume>
+        </track0>
+    </tracks>
+
+    <effects>
+        <count>0</count>
+    </effects>
+
     <clock>
         <frame_cap_on>true</frame_cap_on>
         <period>17</period>
